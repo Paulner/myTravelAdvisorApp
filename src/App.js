@@ -20,12 +20,14 @@ const App = () => {
 
     useEffect(()=>{
         console.log('Coordinates: ', coordinates, bounds);
-
-        getPlacesData()
+        if (bounds){                            // checks if bounds is null 
+        getPlacesData(bounds.sw, bounds.ne)
         .then((data)=>{         // for promise handling 
             console.log(data);
             setPlaces(data);
+            
         })
+    }
     }, [coordinates, bounds]); // empty dependency array at the end of the function call.. meaning the code inside block will happen only at the start of the application
     return(
         <div>
