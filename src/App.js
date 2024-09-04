@@ -35,7 +35,7 @@ const App = () => {
             <Header/>
             <Grid container spacing={3} style={{width: '100%'}}>
                 <Grid item xs={12} md={4}> 
-                    <MyList/> 
+                    <MyList places={places}/> {/* puts name of places on our list on frontend*/}
                 </Grid>
                     
                 <Grid item xs={12} md={8}> 
