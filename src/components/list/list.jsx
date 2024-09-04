@@ -30,7 +30,7 @@ const MyList = ( {places} ) => {
                     <MenuItem value={4.5}> Above 4.5 </MenuItem>
                 </Select>
             </FormControl>
-            <Grid container spacing={3} className={classes.list}>{/**  line 46 means: only if you have places only then you map the places */}
+            <Grid container spacing={2} className={classes.list}>{/**  only if you have places then it will be mapped the places */}
                 {places?.map((place,i) =>  (     
                     <Grid item key={i} xs={12}>   
                         <PlaceDetails place={place}/>
