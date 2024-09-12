@@ -42,7 +42,7 @@ const PlaceDetails = ({place}) => {
                     </Typography>
                 )}
                 <CardActions>
-                    <Button size="small" color="primary" onClick={() => window.open(place.web_url, '_blank')}> {/* */}
+                    <Button size="small" color="primary" onClick={() => window.open(place.web_url, '_blank')}> {/* opens new tab to place's tripadvisor link */}
                         Trip Advisor
                     </Button>
                     <Button size="small" color="primary" onClick={() => window.open(place.website, '_blank')}> {/* */}
